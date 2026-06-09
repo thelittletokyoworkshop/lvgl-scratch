@@ -1,7 +1,7 @@
 <screen>
 	<view>
 		<style name="style_screen" />
-		<lv_label text="Scrasdfsdftch LVGL" align="center">
+		<lv_label text="ok go!" align="center">
 			<style name="style_title" />
 		</lv_label>
 	</view>

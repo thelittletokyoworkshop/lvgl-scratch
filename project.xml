@@ -1,7 +1,7 @@
 <project name="scratch_ui" lvgl_version="9.5.0">
 	<targets>
 		<target name="target_epaper_296x128">
-			<display width="296" height="128" />
+			<display width="128" height="296" />
 		</target>
 	</targets>
 </project>
