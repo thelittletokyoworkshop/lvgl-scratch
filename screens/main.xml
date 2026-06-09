@@ -1,0 +1,8 @@
+<screen>
+	<view>
+		<style name="style_screen" />
+		<lv_label text="Scratch LVGL" align="center">
+			<style name="style_title" />
+		</lv_label>
+	</view>
+</screen>
