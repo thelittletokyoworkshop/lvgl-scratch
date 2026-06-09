@@ -1,0 +1,49 @@
+<!--
+  Widget size playground for the 296x128 e-paper target.
+  Keep most widgets at their default size so the LVGL Viewer shows how large
+  they really are before we start styling them.
+-->
+<screen>
+	<styles>
+		<style name="screen_bw" bg_color="0xffffff" bg_opa="100%" text_color="0x000000" />
+		<style name="guide_line" bg_color="0x000000" bg_opa="100%" border_width="0" radius="0" />
+		<style name="thin_box" border_color="0x000000" border_width="1" bg_opa="0" radius="0" />
+	</styles>
+
+	<view>
+		<style name="screen_bw" />
+
+		<!-- 296x128 bounds: black top/left guide lines -->
+		<lv_obj width="296" height="1" x="0" y="0">
+			<style name="guide_line" />
+		</lv_obj>
+		<lv_obj width="1" height="128" x="0" y="0">
+			<style name="guide_line" />
+		</lv_obj>
+
+		<lv_label text="Default widget sizes" x="6" y="6" />
+
+		<!-- Checkbox: indicator size follows the font height by default. -->
+		<lv_checkbox text="Checkbox" x="6" y="28" />
+		<lv_checkbox text="Checked" checked="true" x="6" y="52" />
+
+		<!-- Button with default sizing from padding + label. -->
+		<lv_button x="116" y="25">
+			<lv_label text="Button" />
+		</lv_button>
+
+		<!-- Switch default size. -->
+		<lv_switch x="214" y="28" />
+		<lv_switch checked="true" x="214" y="58" />
+
+		<!-- Slider given explicit width because default slider size is DPI/theme based. -->
+		<lv_slider width="170" height="12" x="6" y="92" value="45" />
+		<lv_label text="slider 170x12" x="184" y="89" />
+
+		<!-- Explicit 20x20 reference box for scale. -->
+		<lv_obj width="20" height="20" x="260" y="94">
+			<style name="thin_box" />
+		</lv_obj>
+		<lv_label text="20" x="263" y="99" />
+	</view>
+</screen>
